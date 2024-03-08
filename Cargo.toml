@@ -1,0 +1,12 @@
+[package]
+name = "refinedb"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+enums = ["refinery/enums"]
+
+[dependencies]
+refinery = { path = "../refinery/refinery", features = ["rusqlite"] }
+rusqlite = "0.31"
+barrel = { version = "0.7", features = ["sqlite3"] }
